@@ -1,0 +1,170 @@
+/* =========================
+   PROJECTS SECTION WRAPPER
+========================= */
+
+.projects-section {
+    padding: 100px 20px;
+    background: #ffffff;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* FIXED CONTAINER */
+.projects-container {
+    width: 100%;
+    max-width: 1000px; /* 🔥 fixed layout width */
+}
+
+/* TITLE */
+.projects-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+
+    background: linear-gradient(90deg, #7c3aed, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   GRID LAYOUT
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    background: #ffffff;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    border: 1px solid #f3e8ff;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.3s ease;
+
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(124, 58, 237, 0.15);
+}
+
+/* =========================
+   TEXT CONTENT
+========================= */
+
+.project-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.project-desc {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.project-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.github-btn,
+.live-btn {
+    flex: 1;
+
+    text-align: center;
+    text-decoration: none;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+/* GITHUB BUTTON */
+.github-btn {
+    border: 1px solid #7c3aed;
+    color: #7c3aed;
+}
+
+.github-btn:hover {
+    background: #7c3aed;
+    color: white;
+}
+
+/* LIVE BUTTON */
+.live-btn {
+    background: linear-gradient(90deg, #7c3aed, #ec4899);
+    color: white;
+}
+
+.live-btn:hover {
+    opacity: 0.9;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.projects-empty {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    border-radius: 18px;
+
+    border: 1px dashed #c4b5fd;
+
+    background: linear-gradient(135deg, #faf7ff, #ffffff);
+}
+
+.projects-empty h3 {
+    font-size: 20px;
+    color: #7c3aed;
+    margin-bottom: 10px;
+}
+
+.projects-empty p {
+    color: #6b7280;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-title {
+        font-size: 2rem;
+    }
+
+}

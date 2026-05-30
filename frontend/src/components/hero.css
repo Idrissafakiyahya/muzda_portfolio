@@ -1,0 +1,118 @@
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #faf7ff, #ffffff, #f5e9ff);
+
+    font-family: "Poppins", sans-serif;
+
+    padding: 60px 20px;
+}
+
+/* container */
+.hero-container {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+}
+
+/* small text */
+.hero-small-text {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #8b5cf6;
+    text-transform: lowercase;
+}
+
+/* ⭐ NAME (NEW FONT + GRADIENT) */
+.hero-name {
+    font-size: 58px;
+    font-weight: 800;
+
+    font-family: "Playfair Display", serif;
+
+    background: linear-gradient(90deg, #6d28d9, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-transform: capitalize;
+}
+
+/* line */
+.hero-line {
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* middle */
+.hero-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* image */
+.hero-image {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 6px solid white;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+/* text card */
+.hero-text-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+
+    max-width: 420px;
+    text-align: left;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    border: 1px solid #f1eaff;
+}
+
+/* subtitle */
+.hero-description {
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.8;
+}
+
+/* extra text */
+.hero-extra {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* button */
+.hero-bottom {
+    margin-top: 40px;
+}
+
+.hero-button {
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+    color: white;
+    padding: 14px 40px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 15px 30px rgba(124, 58, 237, 0.25);
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+}
