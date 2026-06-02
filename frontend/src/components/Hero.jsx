@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import API from "../services/api";
 import "./hero.css";
 
+// 👉 STATIC IMAGE IMPORT
+import profileImg from "../assets/profile.webp";
+
 function Hero() {
 
     const [homeData, setHomeData] = useState([]);
@@ -14,7 +17,7 @@ function Hero() {
 
     return (
 
-        <section className="hero-section" id = "home">
+        <section className="hero-section" id="home">
 
             {homeData.map((item) => (
 
@@ -38,11 +41,11 @@ function Hero() {
                     {/* MIDDLE */}
                     <div className="hero-middle">
 
-                        {/* IMAGE LEFT */}
+                        {/* IMAGE LEFT (STATIC NOW) */}
                         <div className="hero-image-box">
 
                             <img
-                                src={item.profile_image}
+                                src={profileImg}
                                 alt="profile"
                                 className="hero-image"
                             />
@@ -57,7 +60,6 @@ function Hero() {
                             </p>
 
                             <div className="hero-extra">
-                                I build modern web applications with clean UI and strong backend systems.
                             </div>
 
                         </div>
@@ -79,7 +81,7 @@ function Hero() {
 
         </section>
 
-    )
+    );
 }
 
 export default Hero;

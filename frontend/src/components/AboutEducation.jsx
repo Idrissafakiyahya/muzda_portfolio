@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import API from "../services/api";
 import "./about.css";
 
+// 👉 STATIC IMAGE
+import aboutImg from "../assets/about.webp";
+
 function AboutEducation() {
 
     const [about, setAbout] = useState([]);
@@ -42,14 +45,12 @@ function AboutEducation() {
 
                             <div key={item.id} className="about-content">
 
-                                {/* PROFILE IMAGE */}
-                                {item.image && (
-                                    <img
-                                        src={item.image}
-                                        alt="profile"
-                                        className="about-profile-img"
-                                    />
-                                )}
+                                {/* STATIC PROFILE IMAGE */}
+                                <img
+                                    src={aboutImg}
+                                    alt="profile"
+                                    className="about-profile-img"
+                                />
 
                                 {/* TEXT */}
                                 <p className="about-text">
@@ -99,7 +100,6 @@ function AboutEducation() {
                     <div className="info-card">
                         <h4>Languages</h4>
                         <p>Swahili & English</p>
-                     
                     </div>
 
                     <div className="info-card">
@@ -113,7 +113,7 @@ function AboutEducation() {
 
         </section>
 
-    )
+    );
 }
 
 export default AboutEducation;
